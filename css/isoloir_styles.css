@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url(https://design.penpot.app/internal/gfonts/font/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZtRSW32.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://design.penpot.app/internal/gfonts/font/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW32.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: #020617;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        row-gap: 50px;
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 2px solid#94a3b8;
+        width: 100%;
+    }
+
+    .header img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .header h1 {
+        color: #94a3b8;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    /* SESSION */
+    .session {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 25px;
+
+        background-color: #111123;
+        border-radius: 25px;
+
+        height: 36px;
+        width: 300px;
+    }
+
+    .session h2, p {
+        color: #94a3b8;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    /* CARDS */
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 5px;
+        
+        border-radius: 10px;
+        background-color: #2e314a;
+
+        width: 110px;
+        height: 150px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+    .card img {
+        height: 100px;
+        width: 100px;
+        padding-bottom: 10px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 25px;
+
+        width: fit-content;
+        height: fit-content;
+
+        background-color: #1a2135;
+        border-radius: 10px;
+        box-shadow: 4px 4px 5px  #000000;
+        padding: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+
+    .progressBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+    .progressBar p {
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    progress[value] {
+        /* Reset the default appearance */
+        -webkit-appearance: none;
+        appearance: none;
+        height: 10px;
+    }
+
+    progress[value]::-webkit-progress-bar {
+        background-color: #1e293b;
+        border-radius: 30px;
+    }
+    
+    progress[value]::-webkit-progress-value {
+        background-color: #7ebad6;
+        border-radius: 30px;
+    }
+
+    /* Buttons */
+    .buttons {
+        display: flex;
+        column-gap: 15px;
+    }
+    /* Voter */
+    .voter { 
+        background-color: #77e156;
+    }
+    .voter, .passer {
+        border: none;
+        border-radius: 25px;
+
+        width: 100px;
+        height: 25px;
+        margin: 0;
+
+        color: #f5f5f5;
+        font-family: "DM Sans";
+        font-weight: 700;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    /* Passer */
+    .passer {
+        background-color: #d10d00;
+    }
+
+    .voter img, .passer img {
+        height: 16px;
+        width: 16px;
+    }
+}

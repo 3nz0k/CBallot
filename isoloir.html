@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/isoloir_styles.css">
+    <script src="js/voter.js" defer></script>
+    <script src="js/passer.js" defer></script>
+    <script src="js/options.js" defer></script>
+    <title>Isoloir - CBallot</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Isoloir</h1>
+        <img src="img/cog.png" alt="options" onclick="Options()">
+    </div>
+    <div class="session">
+        <h2>Session : </h2>
+        <p>xxxxxx</p>
+    </div>
+    <div class="cards">
+        <div class="item">
+            <div class="card">
+                <p>Candidat x</p>
+                <img src="img/photo.png" alt="">
+            </div>
+            <div class="card">
+                <p>Candidat x</p>
+                <img src="img/photo.png" alt="">
+            </div>
+        </div>
+        <div class="progressBar">
+            <p>x/xx Votes</p>
+            <progress max = "100" value = "25"></progress>
+        </div>
+        <div class="buttons">
+            <button class="voter" onclick="Voter()"><img src="img/heart.png" alt="Coeur">Voter</button>
+            <button class="passer" onclick="Passer()"><img src="img/cross.png" alt="Croix">Passer</button>
+        </div>
+    </div>
+</body>
+</html>

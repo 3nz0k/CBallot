@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login_styles.css">
     <title>Connexion - CBallot</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
             <h1><img src="img/logo.png" alt="logo">ballot</h1>
             <h2>Connexion</h2>
         </div>
-        <div class="group">
+        <form class="group" id="connexion">
             <div class="login">
                 <div class="id">
                     <img src="img/avatar.png" alt="">
@@ -27,9 +27,10 @@
                 </div>
                 <input type="password" name="password" placeholder="Entrez ici ...">
             </div>
-            <button>Se connecter</button>
+            <button type="submit">Se connecter</button>
             <a href="">Mot de passe oublié ?</a>
-        </div>
+        </form>
     </div>
+<script src="js/connexion.js"></script>
 </body>
 </html>
