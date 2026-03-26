@@ -3,40 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isoloir - CBallot</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/isoloir_styles.css">
     <script src="js/voter.js" defer></script>
     <script src="js/passer.js" defer></script>
     <script src="js/options.js" defer></script>
-    <title>Isoloir - CBallot</title>
 </head>
-<body>
-    <div class="header">
+<body id="body">
+    <!-- HEADER -->
+    <div class="header" id="header">
         <h1>Isoloir</h1>
-        <img src="img/cog.png" alt="options" onclick="Options()">
+        <img src="img/cog.png" alt="Options" onclick="Options()">
     </div>
-    <div class="session">
-        <h2>Session : </h2>
-        <p>xxxxxx</p>
+
+    <!-- SETTINGS -->
+    <div class="settings hidden" id="menu">
+        <div>
+            <span>Dark Mode : </span>
+            <input type="checkbox" id="switch" onclick="Dark()">
+        </div>
+        <div>
+            <p>Settings 2</p>
+        </div>
+        <div>
+            <p>Settings 3</p>
+        </div>
+        <div>
+            <p>Settings 4</p>
+        </div>
     </div>
-    <div class="cards">
-        <div class="item">
-            <div class="card">
-                <p>Candidat x</p>
-                <img src="img/photo.png" alt="">
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="cards">
+
+            <!-- SESSION -->
+            <div class="session" id="session">
+                <h2>Session :</h2>
+                <p>CDA2026</p>
             </div>
-            <div class="card">
-                <p>Candidat x</p>
-                <img src="img/photo.png" alt="">
+
+            <!-- CANDIDATS -->
+            <div class="item" id="item">
+
+                <div class="card" id="card1">
+                    <p>Louis</p>
+                    <img src="img/photo.png" alt="Candidat X">
+                </div>
+
+                <div class="card" id="card2">
+                    <p>Michel</p>
+                    <img src="img/photo.png" alt="Candidat Y">
+                </div>
+
             </div>
+
+            <!-- PROGRESS -->
+            <div class="progressBar" id="progress">
+                <p>2 / 10 votes</p>
+                <progress value="2" max="10"></progress>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+
+                <button class="voter" onclick="Voter()">
+                    <img src="img/heart.png" alt="">
+                    Voter
+                </button>
+
+                <button class="passer" onclick="Passer()">
+                    <img src="img/cross.png" alt="">
+                    Passer
+                </button>
+
+            </div>
+
         </div>
-        <div class="progressBar">
-            <p>x/xx Votes</p>
-            <progress max = "100" value = "25"></progress>
-        </div>
-        <div class="buttons">
-            <button class="voter" onclick="Voter()"><img src="img/heart.png" alt="Coeur">Voter</button>
-            <button class="passer" onclick="Passer()"><img src="img/cross.png" alt="Croix">Passer</button>
-        </div>
+
     </div>
+
 </body>
 </html>
