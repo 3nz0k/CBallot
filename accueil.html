@@ -6,19 +6,33 @@
     <link rel="stylesheet" href="css/accueil_styles.css">
     <title>Plannification des séances de votes</title>
 
-    <script src="js/options.js" defer></script>
+    <script src="js/accueil.js" defer></script>
 </head>
+
 <body class="body">
     <header>
         <nav class="banner">
             <div class="logo">
                 <a href=""><img src="img\logo.png" alt="logo Cballot"></a>
-                <a class="linkUndecorated" href=""><h1>ballot</h1></a>
+                <a class="linkUndecorated" href="">
+                    <h1>ballot</h1>
+                </a>
             </div>
             <div class="text-menu">
-                <a href="" class="button"><img src="img\menuburger.svg" alt=""></a>
-                <a href="" class="button"><img src="img\wheel.svg" alt=""></a>
-                <a href="" class="button"><img src="img\logout.svg" alt=""></a>
+                <img src="img\menuburger.svg" alt="" onclick="submenu()" class="button">
+                <div class="hidden menu" id="burgermenu">
+                    <div>
+                        <p>Gérer les sessions</p>
+                    </div>
+                    <div>
+                        <p>Gérer les binômes</p>
+                    </div>
+                    <div>
+                        <p>Liste des stagiaires</p>
+                    </div>
+                </div>
+                <img src="img\wheel.svg" alt="" class="button">
+                <img src="img\logout.svg" alt="" class="button">
             </div>
         </nav>
     </header>
