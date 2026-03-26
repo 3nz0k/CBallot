@@ -6,11 +6,8 @@
     <title>Isoloir - CBallot</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/isoloir_styles.css">
-
-    <script src="js/voter.js" defer></script>
-    <script src="js/passer.js" defer></script>
     
-    <script src="js/options.js" defer></script>
+    <script src="js/isoloir.js" defer></script>
 </head>
 <body id="body">
     <!-- HEADER -->
@@ -46,46 +43,52 @@
                 <h2>Session :</h2>
                 <p>CDA2026</p>
             </div>
-
-            <!-- CANDIDATS -->
-            <div class="item" id="item">
-
-                <div class="card" id="card1">
-                    <p>Louis</p>
-                    <img src="img/photo.png" alt="Candidat X">
+            
+            <div class="arrow_W_item">
+                <!-- Left Arrow -->
+                <div class="arrows">
+                    <img src="img/arrows/light_left_arrow.png" alt="Left Arrow" id="leftArrow" onclick="leftArrow()">
                 </div>
 
-                <div class="card" id="card2">
-                    <p>Michel</p>
-                    <img src="img/photo.png" alt="Candidat Y">
+                <!-- CANDIDATS -->
+                <div class="item" id="item">
+
+                    <!-- CARD -->
+                    <div class="card" id="card1">
+                        <p>Louis</p>
+                        <img src="img/photo.png" alt="Candidat X">
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card" id="card2">
+                        <p>Michel</p>
+                        <img src="img/photo.png" alt="Candidat Y">
+                    </div>
+
+                </div>
+
+                <!-- Right Arrow -->
+                <div class="arrows">
+                    <img src="img/arrows/light_right_arrow.png" alt="Right Arrow" id="rightArrow" onclick="rightArrow()">
                 </div>
 
             </div>
 
             <!-- PROGRESS -->
             <div class="progressBar" id="progress">
-                <p>2 / 10 votes</p>
-                <progress value="2" max="10"></progress>
+                <p>0 / 10 votes</p>
+                <progress value="0" max="10"></progress>
             </div>
 
             <!-- BUTTONS -->
             <div class="buttons">
-
                 <button class="voter" onclick="Voter()">
                     <img src="img/heart.png" alt="">
                     Voter
                 </button>
-
-                <button class="passer" onclick="Passer()">
-                    <img src="img/cross.png" alt="">
-                    Passer
-                </button>
-
             </div>
 
         </div>
-
     </div>
-
 </body>
 </html>
