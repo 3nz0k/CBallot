@@ -1,10 +1,9 @@
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/accueil_styles.css">
-    <title>Plannification des séances de votes</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/accueil_styles.css">
+        <title>Plannification des séances de votes</title>
 
     <script src="js/accueil.js" defer></script>
 </head>
@@ -37,5 +36,49 @@
         </nav>
     </header>
 </body>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="js/accueil.js" defer></script>
+    </head>
+    <body class="body">
+        <header>
+            <nav class="banner">
+                <div class="logo">
+                    <a href=""><img src="img\logo.png" alt="logo Cballot"></a>
+                    <a class="linkUndecorated" href=""><h1>ballot</h1></a>
+                </div>
+                <div class="text-menu">
+                    <a href="" class="button"><img src="img\menuburger.svg" alt=""></a>
+                    <a href="" class="button"><img src="img\wheel.svg" alt=""></a>
+                    <a href="" class="button"><img src="img\logout.svg" alt=""></a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="add" onclick="Add()">
+            <img src="img/add.png" alt="Add Button">
+            <p>Ajouter</p>
+        </div>
+
+        <div id="modalAdd" class="modal hidden">
+
+            <!-- Contenu du Modal -->
+            <form class="modalContent" id="form">
+                <div class="inputs">
+                    <div>
+                        <p>Nom :</p>
+                        <input type="text" name="lastName">
+                    </div>
+                    <div>
+                        <p>Prénom :</p>
+                        <input type="text" name="firstName">
+                    </div>
+                    <button class="close" type="submit">Ajouter</button>
+                </div>
+                <img src="img/cross.png" alt="" onclick="Close()">
+            </form>
+        </div>
+
+    </body>
 
 </html>

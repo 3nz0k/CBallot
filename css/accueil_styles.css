@@ -5,6 +5,10 @@
     background-origin: padding-box;
 }
 
+p {
+    font-family: "DM Sans";
+}
+
 .banner {
     background-color: rgb(165, 165, 234);
     display: flex;
@@ -73,10 +77,92 @@
     left: -90px;
 }
 
+
+.add {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.add img {
+    height: 32px;
+}
+
+
+.modal {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none;
+}
+
 .menu {
     display: flex;
     text-align: center;
     flex-direction: column;
     row-gap: 1px;
     width: 150px;
+}
+
+.modalContent {
+    background: #0b1120;
+    border: 3px solid #172554;
+    
+    padding: 25px 100px;
+    border-radius: 50px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.modalContent div {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.modalContent input {
+    border-radius: 15px;
+    padding: 10px;
+
+    font-size: 20px;
+    background-color: #2e314a;
+    color: #94a3b8;
+    border: none;
+}
+
+.modalContent p {
+    color: #94a3b8;
+}
+
+.modalContent button {
+    background-color: #2e314a;
+    color: #9aa4b2;
+    border: none;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.modalContent button:hover {
+    background-color: #078ca3;
+    color: black;
+}
+
+.modalContent img {
+    height: 16px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
