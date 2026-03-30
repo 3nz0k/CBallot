@@ -1,53 +1,65 @@
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/accueil_styles.css">
-        <title>Plannification des séances de votes</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/accueil_styles.css">
+    <title>Plannification des séances de votes</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-        <script src="js/accueil.js" defer></script>
-    </head>
-    <body class="body">
-        <header>
-            <nav class="banner">
-                <div class="logo">
-                    <a href=""><img src="img\logo.png" alt="logo Cballot"></a>
-                    <a class="linkUndecorated" href=""><h1>ballot</h1></a>
-                </div>
-                <div class="text-menu">
-                    <a href="" class="button"><img src="img\menuburger.svg" alt=""></a>
-                    <a href="" class="button"><img src="img\wheel.svg" alt=""></a>
-                    <a href="" class="button"><img src="img\logout.svg" alt=""></a>
-                </div>
-            </nav>
-        </header>
-
-        <div class="add" onclick="Add()">
-            <img src="img/add.png" alt="Add Button">
-            <p>Ajouter</p>
-        </div>
-
-        <div id="modalAdd" class="modal hidden">
-
-            <!-- Contenu du Modal -->
-            <form class="modalContent" id="form">
-                <div class="inputs">
+<body class="body">
+    <header>
+        <nav class="banner">
+            <div class="logo">
+                <a href=""><img src="img\logo.png" alt="logo Cballot"></a>
+                <a class="linkUndecorated" href="">
+                    <h1>ballot</h1>
+                </a>
+            </div>
+            <div class="text-menu">
+                <img src="img\menuburger.svg" alt="" onclick="submenu()" class="button">
+                <div class="hidden menu" id="burgermenu">
                     <div>
-                        <p>Nom :</p>
-                        <input type="text" name="lastName">
+                        <p>Gérer les sessions</p>
                     </div>
                     <div>
-                        <p>Prénom :</p>
-                        <input type="text" name="firstName">
+                        <p>Gérer les binômes</p>
                     </div>
-                    <button class="close" type="submit">Ajouter</button>
+                    <div>
+                        <p>Liste des stagiaires</p>
+                    </div>
                 </div>
-                <img src="img/cross.png" alt="" onclick="Close()">
-            </form>
-        </div>
+                <img src="img\wheel.svg" alt="" class="button">
+                <img src="img\logout.svg" alt="" class="button">
+            </div>
+        </nav>
+    </header>
 
-    </body>
+    <div class="add" onclick="Add()">
+        <img src="img/add.png" alt="Add Button">
+        <p>Ajouter</p>
+    </div>
+
+    <div id="modalAdd" class="modal hidden">
+
+        <!-- Contenu du Modal -->
+        <form class="modalContent" id="form">
+            <div class="inputs">
+                <div>
+                    <p>Nom :</p>
+                    <input type="text" name="lastName">
+                </div>
+                <div>
+                    <p>Prénom :</p>
+                    <input type="text" name="firstName">
+                </div>
+                <button class="close" type="submit">Ajouter</button>
+            </div>
+            <img src="img/cross.png" alt="" onclick="Close()">
+        </form>
+    </div>
+    <script src="js/accueil.js" defer></script>
+</body>
 
 </html>

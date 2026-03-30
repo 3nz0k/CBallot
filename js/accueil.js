@@ -21,3 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("firstName :", firstName);
     });
 });
+
+function submenu(){
+    const submenu = document.getElementById("submenu");
+    submenu.classList.toggle("hidden");
+}
