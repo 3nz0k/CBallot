@@ -64,16 +64,30 @@ p {
     text-align: center;
     flex-direction: column;
     row-gap: 1px;
-    width: 150px;
+    width: 170px;
+}
+
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "DM sans";
 }
 
 .menu div {
     display: flex;
+    justify-content: center;
     background-color: #4f55a7;
     height: 50px;
     padding-top: 15px;
-    padding-left: 15px;
 
+}
+
+.menu div:hover {
+    background-color: #1c3268;
+    a{color: white}
 }
 
 #burgermenu {
@@ -86,6 +100,7 @@ p {
     display: flex;
     align-items: center;
     column-gap: 5px;
+    cursor: pointer;
 }
 
 .add img {
@@ -160,6 +175,131 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* SETTINGS */
+
+.settings {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    gap: 5px;
+    position: absolute;
+    top: 85px;
+}
+
+.settings div {
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings p {
+    color: #020617;
+    font-size: 24px;
+}
+
+.settings div:nth-child(odd){
+    background-color: #a7b6df;
+}
+
+.settings div:nth-child(even){
+    background-color: #70b1e6;
+}
+
+.settings div:nth-child(1){
+    gap: 10px;
+}
+
+.settings-div-odd-dark {
+    background-color: #1a2135 !important;
+}
+
+.settings-div-even-dark {
+    background-color: #2e314a !important;
+}
+
+/* -------------------------------- */
+/* BUTON DARK */
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	font: inherit;
+	font-size: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+	inline-size: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: .25rem;
+	border: 1px solid currentColor;
+	border-radius: 1rem;
+	transition: 120ms background-color ease-in-out;
+}
+
+input[type="checkbox"]:focus-visible {
+	outline: 2px solid var(--focus);
+	outline-offset: 2px;
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	display: block;
+	clip-path: revert;
+	inline-size: 1.25rem;
+	block-size: 1.25rem;
+	background-color: currentColor;
+	border-radius: 1rem;
+	transform: translateX(0);
+	transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+	background-color: currentColor;
+}
+
+input[type="checkbox"]:checked::before {
+	transform: translateX(1.65rem);
+	background-color: white;
+}
+
+/* TABLEAU */
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto 10px;
+    width: 65%;
+    font-family: "DM sans";
+    font-size: 15px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.impaire {
+    background-color: #c8d5f5;
+}
+
+.paire {
+    background-color: #e7e7e7;
 }
 
 .hidden {
