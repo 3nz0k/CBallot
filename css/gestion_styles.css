@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-origin: padding-box;
+}
+
+p {
+    font-family: "DM Sans";
+}
+
+h1 {
+    font-family: "DM Sans";
+    font-weight: 700;
+}
+
+body {
+    background-color: #F8FAFC;
+}
+/* Body */
+.body-dark {
+    background-color: #020617;
+}
+
+/* Header */
+.header {
+    background-color: rgb(165, 165, 234);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-dark {
+    background-color: #1e293b;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.logo h1 {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-dark a {
+    color: #94a3b8;
+}
+
+/* Right Menu */
+.text-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Burger Menu */
+.menu {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 1px;
+    width: 150px;
+    position: absolute;
+    top: 65px;
+    left: -109px;
+}
+
+.menu div {
+    display: flex;
+    background-color: #4f55a7;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+
+}
+
+.menu-button {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 10px;
+    width: 50%;
+    height: 30%;
+    cursor: pointer;
+}
+
+/* Dark button */
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	font: inherit;
+	font-size: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+	inline-size: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: .25rem;
+	border: 1px solid currentColor;
+	border-radius: 1rem;
+	transition: 120ms background-color ease-in-out;
+}
+
+input[type="checkbox"]:focus-visible {
+	outline: 2px solid var(--focus);
+	outline-offset: 2px;
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	display: block;
+	clip-path: revert;
+	inline-size: 1.25rem;
+	block-size: 1.25rem;
+	background-color: currentColor;
+	border-radius: 1rem;
+	transform: translateX(0);
+	transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+	background-color: currentColor;
+}
+
+input[type="checkbox"]:checked::before {
+	transform: translateX(1.65rem);
+	background-color: white;
+}
+
+/* Table */
+
+.table-header {
+    width: 75%;
+    margin: 20px auto 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table {
+    width: 75%;
+    margin: 20px auto 10px;
+
+    border-collapse: collapse;
+    background: #0f172a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-dark {
+    background: #0f172a;
+}
+
+/* Header */
+.table th {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "DM Sans";
+    font-weight: 700;
+}
+
+/* Cells */
+.table td {
+    padding: 15px;
+    color: #94a3b8;
+    border-bottom: 1px solid #1e293b;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 24px;
+}
+
+.table-dark td {
+    color: #94a3b8;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* Row */
+.table tr {
+    background: #162033;
+    transition: 0.2s;
+}
+
+.table-dark tr {
+    background: #162033;
+    transition: 0.2s;
+}
+
+/* Hover */
+.table tr:hover {
+    background: #1a2135;
+}
+
+.table-dark tr:hover {
+    background: #1a2135;
+}
+
+
+/* Last row */
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Action button */
+.table button {
+    background: #7dd3fc;
+    color: #020617;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    font-size: 20px;
+    font-family: "DM Sans";
+}
+
+.table button:hover {
+    background: #38bdf8;
+}
+
+.table .delete {
+    background: #ef4444;
+    color: white;
+}
+
+.table .delete:hover {
+    background: #dc2626;
+}
+
+/* Bouton Ajouter */
+.add {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    background: #7dd3fc;
+    color: #020617;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.add img {
+    height: 32px;
+}
+
+.add:hover {
+    background: #38bdf8;
+}
+
+.modal {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalContent {
+    background: #0b1120;
+    border: 3px solid #172554;
+    
+    padding: 25px 100px;
+    border-radius: 50px;
+    height: auto;
+
+}
+
+.modalContent div {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.modalContent div div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 420px;
+}
+
+.modalContent input {
+    border-radius: 15px;
+    padding: 10px;
+
+    font-size: 20px;
+    background-color: #2e314a;
+    color: #94a3b8;
+    border: none;
+}
+
+.modalContent p {
+    color: #94a3b8;
+}
+
+.modalContent button {
+    background-color: #2e314a;
+    color: #9aa4b2;
+    border: none;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.modalContent button:hover {
+    background-color: #078ca3;
+    color: black;
+}
+
+.modalContent img {
+    height: 16px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,103 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gestion_styles.css">
+    <title>Gestion des sessions</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/gestion.js" defer></script>
+</head>
+
+<body id="body">
+    <header>
+        <nav class="header" id="header">
+            <div class="logo" id="logo">
+                <a href=""><img src="img\logo.png" alt="logo Cballot"></a>
+                <a href=""><h1>ballot</h1></a>
+            </div>
+            <div class="text-menu">
+                <img src="img\menuburger.svg" alt="" onclick="SubMenu()" class="menu-button">
+                <div class="menu hidden" id="burgermenu">
+                    <div>
+                        <p>Gérer les sessions</p>
+                    </div>
+                    <div>
+                        <p>Gérer les binômes</p>
+                    </div>
+                    <div>
+                        <p>Liste des stagiaires</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="switch" onclick="Dark()">
+                </div>
+                <img src="img\logout.svg" alt="" class="menu-button">
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <div class="table-header">
+            <h1>Gestion des sessions</h1>
+            <div class="add" onclick="Add()">
+                <img src="img/add.png" alt="Add Button">
+                <p>Ajouter</p>
+            </div>
+        </div>
+
+        <table class="table" id="table">
+            <tr>
+                <th>Nom de la session</th>
+                <th>Lieu</th>
+                <th>Date de début</th>
+                <th>Date de fin</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>CDA2026</td>
+                <td>Mont de marsan</td>
+                <td>05/01/2026</td>
+                <td>05/12/2026</td>
+                <td><button class="delete" onclick="Delete(this)">Supprimer</button></td>
+            </tr>
+            <tr>
+                <td>CDA2027</td>
+                <td>Mont de marsan</td>
+                <td>05/01/2026</td>
+                <td>05/12/2026</td>
+                <td><button class="delete" onclick="Delete(this)">Supprimer</button></td>
+            </tr>
+        </table>
+
+        <div id="modalAdd" class="modal hidden">
+
+            <!-- Contenu du Modal -->
+            <form class="modalContent" id="form">
+                <div class="inputs">
+                    <div>
+                        <p>Nom de la session :</p>
+                        <input type="text" name="sessionName">
+                    </div>
+                    <div>
+                        <p>Lieu :</p>
+                        <input type="text" name="location">
+                    </div>
+                    <div>
+                        <p>Date de début :</p>
+                        <input type="text" name="startDate">
+                    </div>
+                    <div>
+                        <p>Date de fin :</p>
+                        <input type="text" name="endDate">
+                    </div>
+                    <button class="close" type="submit">Ajouter</button>
+                </div>
+                <img src="img/cross.png" alt="" onclick="Close()">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
