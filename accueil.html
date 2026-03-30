@@ -22,17 +22,32 @@
                 <img src="img\menuburger.svg" alt="" onclick="Submenu()" class="button">
                 <div class="menu hidden" id="burgermenu">
                     <div>
-                        <p>Gérer les sessions</p>
+                        <a href="">Gérer les sessions</a>
                     </div>
                     <div>
-                        <p>Gérer les binômes</p>
+                        <a href="">Gérer les binômes</a>
                     </div>
                     <div>
-                        <p>Liste des stagiaires</p>
+                        <a href="">Liste des stagiaires</a>
                     </div>
                 </div>
-                <img src="img\wheel.svg" alt="" class="button">
+                <img src="img\wheel.svg" alt="" onclick="Options()" class="button">
                 <img src="img\logout.svg" alt="" class="button">
+            </div>
+            <div class="settings hidden" id="menu">
+                <div>
+                    <span>Dark Mode : </span>
+                    <input type="checkbox" id="switch" onclick="Dark()">
+                </div>
+                <div>
+                    <p>Settings 2</p>
+                </div>
+                <div>
+                    <p>Settings 3</p>
+                </div>
+                <div>
+                    <p>Settings 4</p>
+                </div>
             </div>
         </nav>
     </header>
@@ -60,6 +75,36 @@
             <img src="img/cross.png" alt="" onclick="Close()">
         </form>
     </div>
+    <table class="table">
+        <tr class="impaire">
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Âge</th>
+            <th>Lieu de séance</th>
+            <th>N° de candidat</th>
+            <th>Action</th>
+        </tr>
+        <tr class="paire">
+            <td>LABAT</td>
+            <td>Kévin</td>
+            <td>33 ans</td>
+            <td>Mont de Marsan</td>
+            <td>Numéro</td>
+            <td>
+                <img src="img/corbeil.svg" alt="" onclick="Delete(this)">
+            </td>
+        </tr>
+        <tr class="impaire">
+            <td>MARTINEZ</td>
+            <td>Enzo</td>
+            <td>20 ans</td>
+            <td>Mont de Marsan</td>
+            <td>Numéro</td>
+            <td>
+                <img src="img/corbeil.svg" alt="" onclick="Delete(this)">
+            </td>
+        </tr>
+    </table>
     <script src="js/accueil.js" defer></script>
 </body>
 
