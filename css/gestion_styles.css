@@ -17,6 +17,7 @@ h1 {
 body {
     background-color: #F8FAFC;
 }
+
 /* Body */
 .body-dark {
     background-color: #020617;
@@ -52,6 +53,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+
 .logo a {
     text-decoration: none;
     color: black;
@@ -104,46 +106,46 @@ body {
 
 /* Dark button */
 input[type="checkbox"] {
-	-webkit-appearance: none;
-	appearance: none;
-	font: inherit;
-	font-size: inherit;
-	color: inherit;
-	letter-spacing: inherit;
-	inline-size: 3.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	padding: .25rem;
-	border: 1px solid currentColor;
-	border-radius: 1rem;
-	transition: 120ms background-color ease-in-out;
+    -webkit-appearance: none;
+    appearance: none;
+    font: inherit;
+    font-size: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    inline-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .25rem;
+    border: 1px solid currentColor;
+    border-radius: 1rem;
+    transition: 120ms background-color ease-in-out;
 }
 
 input[type="checkbox"]:focus-visible {
-	outline: 2px solid var(--focus);
-	outline-offset: 2px;
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
 }
 
 input[type="checkbox"]::before {
-	content: "";
-	display: block;
-	clip-path: revert;
-	inline-size: 1.25rem;
-	block-size: 1.25rem;
-	background-color: currentColor;
-	border-radius: 1rem;
-	transform: translateX(0);
-	transition: 120ms transform ease-in-out;
+    content: "";
+    display: block;
+    clip-path: revert;
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+    background-color: currentColor;
+    border-radius: 1rem;
+    transform: translateX(0);
+    transition: 120ms transform ease-in-out;
 }
 
 input[type="checkbox"]:checked {
-	background-color: currentColor;
+    background-color: currentColor;
 }
 
 input[type="checkbox"]:checked::before {
-	transform: translateX(1.65rem);
-	background-color: white;
+    transform: translateX(1.65rem);
+    background-color: white;
 }
 
 /* Table */
@@ -284,7 +286,7 @@ input[type="checkbox"]:checked::before {
 .modalContent {
     background: #0b1120;
     border: 3px solid #172554;
-    
+
     padding: 25px 100px;
     border-radius: 50px;
     height: auto;
