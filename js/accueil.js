@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function submenu(){
+function Submenu(){
     const submenu = document.getElementById("submenu");
     submenu.classList.toggle("hidden");
 }
