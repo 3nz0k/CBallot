@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function Submenu(){
-    const submenu = document.getElementById("submenu");
+    const submenu = document.getElementById("burgermenu");
     submenu.classList.toggle("hidden");
 }

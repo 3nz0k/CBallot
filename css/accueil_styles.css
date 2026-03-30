@@ -58,8 +58,13 @@ p {
     cursor: pointer;
 }
 
-.hidden {
-    display: none;
+/* Burger Menu */
+.menu {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 1px;
+    width: 150px;
 }
 
 .menu div {
@@ -76,7 +81,6 @@ p {
     top: 65px;
     left: -109px;
 }
-
 
 .add {
     display: flex;
@@ -97,17 +101,6 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.hidden {
-    display: none;
-}
-
-.menu {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    row-gap: 1px;
-    width: 170px;
-}
 
 .modalContent {
     background: #0b1120;
@@ -167,4 +160,8 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.hidden {
+    display: none;
 }
