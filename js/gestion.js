@@ -61,9 +61,11 @@ function Dark()
 {
     const body = document.getElementById("body");
     const header = document.getElementById("header");
-    const logo = document.querySelectorAll(".logo a");
+    const logo = document.getElementById("logo");
+    const table = document.getElementById("table");
    
     body.classList.toggle("body-dark");
     header.classList.toggle("header-dark");
     logo.classList.toggle("logo-dark");
+    table.classList.toggle("table-dark");
 }

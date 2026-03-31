@@ -15,17 +15,19 @@ h1 {
 }
 
 body {
-    background-color: #F8FAFC;
+    background-color: #d9ecff;
+    color: #242425;
 }
 
 /* Body */
 .body-dark {
+    color: #94a3b8;
     background-color: #020617;
 }
 
 /* Header */
 .header {
-    background-color: rgb(165, 165, 234);
+    background-color: #b9d9f8;
     display: flex;
     justify-content: space-between;
 }
@@ -164,7 +166,7 @@ input[type="checkbox"]:checked::before {
     margin: 20px auto 10px;
 
     border-collapse: collapse;
-    background: #0f172a;
+    background: #b1caeb;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -175,8 +177,8 @@ input[type="checkbox"]:checked::before {
 
 /* Header */
 .table th {
-    background: #1e293b;
-    color: #e2e8f0;
+    background: #b1caeb;
+    color: #0F172A;
     padding: 15px;
     text-align: center;
     font-size: 30px;
@@ -184,11 +186,16 @@ input[type="checkbox"]:checked::before {
     font-weight: 700;
 }
 
+.table-dark th {
+    color: #e2e8f0;
+    background-color: #1e293b;
+}
+
 /* Cells */
 .table td {
     padding: 15px;
-    color: #94a3b8;
-    border-bottom: 1px solid #1e293b;
+    color: #242425;
+    border-bottom: 1px solid #b1caeb;
     text-align: center;
     font-family: "DM Sans";
     font-size: 24px;
@@ -201,7 +208,7 @@ input[type="checkbox"]:checked::before {
 
 /* Row */
 .table tr {
-    background: #162033;
+    background: #cde4ff;
     transition: 0.2s;
 }
 
@@ -212,7 +219,7 @@ input[type="checkbox"]:checked::before {
 
 /* Hover */
 .table tr:hover {
-    background: #1a2135;
+    background: #e6f1ff;
 }
 
 .table-dark tr:hover {
@@ -227,7 +234,7 @@ input[type="checkbox"]:checked::before {
 
 /* Action button */
 .table button {
-    background: #7dd3fc;
+    background: #b2e1f7;
     color: #020617;
     border: none;
     padding: 8px 14px;
@@ -258,7 +265,7 @@ input[type="checkbox"]:checked::before {
     align-items: center;
     column-gap: 5px;
 
-    background: #7dd3fc;
+    background: #b2e1f7;
     color: #020617;
     border: none;
     padding: 10px 15px;
